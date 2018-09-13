@@ -1,0 +1,20 @@
+
+/**The Post entity */
+entity Post {
+	title String
+	description String
+}
+
+/**The Followers entity */
+entity Followers {
+	userId Long
+	followerId Long
+}
+
+// Set pagination options
+paginate * with infinite-scroll
+
+// Set service options to all except few
+service all with serviceImpl
+// Set an angular suffix
+angularSuffix * with fol
